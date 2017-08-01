@@ -1,6 +1,5 @@
 # Docker Compose Nginx Phpfpm Mariadb Symfony
 
-Everything you need to get [Symfony](https://symfony.com/) apps running in [Docker](https://www.docker.com/).
 [Docker](https://www.docker.com/) container with [Composer](https://getcomposer.org/), [PHPUnit](https://phpunit.de/) and [OpenSSH](https://www.openssh.com/). Designed to be used for deployment and extends [Composer container](https://hub.docker.com/_/composer/).
 
 # Requirements
@@ -15,8 +14,6 @@ Included are the following:
 - [Composer](https://getcomposer.org/)
 - [PHPUnit](https://phpunit.de/) 
 - [OpenSSH](https://www.openssh.com/)
-
-- Profit!
 
 # Contributing
 
