@@ -2,12 +2,8 @@ FROM composer:latest
 
 # PHP
 RUN apk update && \
-    apk add  --no-cache g++ make autoconf zlib && \
-    docker-php-source extract && \
+    apk add  --no-cache g++ make autoconf zlib-dev && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug && \
-    docker-php-source delete && \
-    docker-php-ext-install zip
-            
-# Cleanup
-RUN rm -rf /tmp/*
+    docker-php-ext-install zip && \
+    rm -rf /tmp/*
