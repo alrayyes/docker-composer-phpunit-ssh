@@ -2,7 +2,7 @@ FROM composer:latest
 
 # PHP
 RUN apk update && \
-    apk add  --no-cache autoconf zlib && \
+    apk add  --no-cache g++ make autoconf zlib && \
     docker-php-source extract && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug && \
