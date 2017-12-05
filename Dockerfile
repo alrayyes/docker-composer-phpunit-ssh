@@ -1,4 +1,4 @@
-FROM composer:latest
+FROM composer:1.5.5
 
 # PHP
 RUN apk update && \
